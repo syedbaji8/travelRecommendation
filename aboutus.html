@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About us:: Travel Recommendation for your trips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100 min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-[#1a2d39] text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex flex-col lg:flex-row justify-between items-center gap-4">
+
+            <h1 class="text-2xl font-bold">
+                TravelReco
+            </h1>
+
+            <ul class="flex flex-col sm:flex-row items-center gap-20 w-full lg:w-auto">
+
+                <li>
+                    <a href="./index.html" id="home" class="hover:text-yellow-300 transition">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html" id="home" class="hover:text-yellow-300 transition">
+                        About us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./contact.html" id="contact" class="hover:text-yellow-300 transition">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+            <!-- <ul class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+                <li class="w-full sm:w-auto relative">
+                    <input type="text" id="conditionInput" placeholder="Enter a health condition"
+                        class="w-full sm:w-72 pl-4 pr-40 py-2 rounded-3xl border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        fdprocessedid="rjh9l9">
+                    <div class="absolute right-0 top-[50%] -translate-y-[50%] pr-4">
+                        <button id="btnSearch"
+                            class="bg-[#45817d] hover:bg-green-600 px-3 py-1 rounded-lg font-semibold transition"
+                            >
+                            Search
+                        </button>
+                        <button id="btnReset"
+                            class="bg-[#45817d] hover:bg-green-600 px-3 py-1 rounded-lg font-semibold transition"
+                            >
+                            Reset
+                        </button>
+                    </div>
+                </li>
+            </ul> -->
+        </div>
+    </nav>
+    <main class="w-full h-[calc(100vh-75px)] bg-[url('./images/bg-travelreco-image.jpg')] bg-cover bg-center relative">
+        <div class="main-page w-full h-full flex flex-row flex-wrap items-center justify-start p-0 px-30">
+            <section class="text-content w-full bg-[#000000]/15 p-4">
+                <h1 class="text-5xl font-bold text-white mb-3">ABOUT US</h1>
+                <p class="text-white text-xl mb-3 text-shadow-lg">The Travel Recommendation App helps users explore
+                    popular travel
+                    destinations through an interactive and user friendly interface. It allows users to search for
+                    beaches, temples,
+                    countries, or specific country names to view related cities along with images and descriptions. The
+                    app dynamically fetches data from a structured JSON file to display relevant results. It provides a
+                    simple and efficient way to discover and plan travel destinations.</p>
+            </section>
+            <section class="text-content w-full bg-[#000000]/15 p-4 flex flex-row flex-wrap gap-0">
+                <h1 class="text-5xl font-bold text-white mb-3 w-1/5 flex items-center justify-start">Our <br> Team</h1>
+                <div class="w-4/5">
+                    <ul class="p-0 m-0 w-full flex flex-row flex-wrap items-center justify-between gap-0 text-white">
+                        <li class="p-0 m-0 w-1/3 px-10">
+                            <div class="p-0 m-0 w-full flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-circle-user text-6xl mb-2"></i>
+                                <h5 class="font-bold text-2xl mb-2">John Doe</h5>
+                                <p class="text-center leading-tight mb-2">Celina Thomas Mike Tyson John is responsible for overall Celina leads the technical and Mike</p>
+                                <button id=""
+                                    class="bg-[#2f4f6f] hover:bg-green-600 px-3 py-0 rounded-sm font-semibold transition text-sm text-white text-center"
+                                    >
+                                    CEO
+                                </button>
+                            </div>
+                        </li>
+                        <li class="p-0 m-0 w-1/3 px-10">
+                            <div class="p-0 m-0 w-full flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-circle-user text-6xl mb-2"></i>
+                                <h5 class="font-bold text-2xl mb-2">John Doe</h5>
+                                <p class="text-center leading-tight mb-2">Celina Thomas Mike Tyson John is responsible for overall Celina leads the technical and Mike</p>
+                                <button id=""
+                                    class="bg-[#2f4f6f] hover:bg-green-600 px-3 py-0 rounded-sm font-semibold transition text-sm text-white text-center"
+                                    >
+                                    CEO
+                                </button>
+                            </div>
+                        </li>
+                        <li class="p-0 m-0 w-1/3 px-10">
+                            <div class="p-0 m-0 w-full flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-circle-user text-6xl mb-2"></i>
+                                <h5 class="font-bold text-2xl mb-2">John Doe</h5>
+                                <p class="text-center leading-tight mb-2">Celina Thomas Mike Tyson John is responsible for overall Celina leads the technical and Mike</p>
+                                <button id=""
+                                    class="bg-[#2f4f6f] hover:bg-green-600 px-3 py-0 rounded-sm font-semibold transition text-sm text-white text-center"
+                                    >
+                                    CEO
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+        <div
+            class="social-icons absolute left-0 top-[50%] -translate-y-[50%] w-[60px] flex flex-col text-white text-2xl items-center justify-center ml-2">
+            <a href="#" class="w-[60px] h-[60px] flex items-center justify-center">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-[60px] h-[60px] flex items-center justify-center">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="w-[60px] h-[60px] flex items-center justify-center">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="w-[60px] h-[60px] flex items-center justify-center">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </main>
+
+    <script src="./health_analysis.js"></script>
+
+
+    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+</body>
+
+</html>

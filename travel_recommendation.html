@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Recommendation for your trips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100 min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-[#1a2d39] text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex flex-col lg:flex-row justify-between items-center gap-4">
+            <h1 class="text-2xl font-bold">
+                TravelReco
+            </h1>
+            <ul class="flex flex-col sm:flex-row items-center gap-20 w-full lg:w-auto">
+                <li>
+                    <a href="./index.html" id="home" class="hover:text-yellow-300 transition">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./aboutus.html" id="home" class="hover:text-yellow-300 transition">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="./contactus.html" id="contact" class="hover:text-yellow-300 transition">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+                <li class="w-full sm:w-auto relative">
+                    <input type="text" id="searchInput" placeholder="Enter a health condition"
+                        class="w-full sm:w-72 pl-4 pr-40 py-2 rounded-3xl border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        fdprocessedid="rjh9l9">
+                    <div class="absolute right-0 top-[50%] -translate-y-[50%] pr-4">
+                        <button id="searchButton"
+                            class="bg-[#45817d] hover:bg-green-600 px-3 py-1 rounded-lg font-semibold transition">
+                            Search
+                        </button>
+                        <button id="btnReset"
+                            class="bg-[#45817d] hover:bg-green-600 px-3 py-1 rounded-lg font-semibold transition">
+                            Reset
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="w-full h-[calc(100vh-75px)] bg-[url('./images/bg-travelreco-image.jpg')] bg-cover bg-center relative">
+        <div class="main-page w-full h-full flex items-start justify-start p-0 px-30 relative pt-10 overflow-y-auto">
+            <section id="firstTextContentSection" class="text-content w-1/2 bg-[#000000]/15 p-4 flex flex-row flex-wrap">
+                <h1 class="text-5xl font-bold text-white mb-3">EXPLORE DREAM <br> DESTINATION</h1>
+                <p class="text-white text-xl mb-3 text-shadow-lg">The Travel Recommendation App helps users explore
+                    popular travel
+                    destinations through an interactive and user friendly interface. It allows users to search for
+                    beaches, temples,
+                    countries, or specific country names to view related cities along with images and descriptions. The
+                    app dynamically fetches data from a structured JSON file to display relevant results. It provides a
+                    simple and efficient way to discover and plan travel destinations.</p>
+                <button id="btnReset"
+                    class="bg-[#45817d] hover:bg-green-600 px-4 py-2 rounded-sm font-semibold transition text-xl text-white">
+                    Book Now
+                </button>
+            </section>
+            <section id="searchResultsSection" class="search-results-section w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- <div class="div for-gap p-0">
+                    <div class="item item-1 bg-white rounded-[18px] shadow-xl">
+                        <div class="p-[14px] pb-[8px]">
+                            <img src="./images/land1.jpg" class="w-full h-[230px] rounded-[18px] object-cover">
+                        </div>
+                        <div class="px-5 pb-5 text-center">
+                            <h2 class="text-[25px] font-black text-[#001d73] leading-none">
+                                Bora Bora, French Polynesia
+                            </h2>
+                            <p class="mt-2 text-[16px] leading-[20px] text-[#3c3c3c]">
+                                An island known for its stunning turquoise waters and luxurious overwater bungalows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div for-gap p-0">
+                    <div class="item item-1 bg-white rounded-[18px] shadow-xl">
+                        <div class="p-[14px] pb-[8px]">
+                            <img src="./images/land1.jpg" class="w-full h-[230px] rounded-[18px] object-cover">
+                        </div>
+                        <div class="px-5 pb-5 text-center">
+                            <h2 class="text-[25px] font-black text-[#001d73] leading-none">
+                                Bora Bora, French Polynesia
+                            </h2>
+                            <p class="mt-2 text-[16px] leading-[20px] text-[#3c3c3c]">
+                                An island known for its stunning turquoise waters and luxurious overwater bungalows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div for-gap p-0">
+                    <div class="item item-1 bg-white rounded-[18px] shadow-xl">
+                        <div class="p-[14px] pb-[8px]">
+                            <img src="./images/land1.jpg" class="w-full h-[230px] rounded-[18px] object-cover">
+                        </div>
+                        <div class="px-5 pb-5 text-center">
+                            <h2 class="text-[25px] font-black text-[#001d73] leading-none">
+                                Bora Bora, French Polynesia
+                            </h2>
+                            <p class="mt-2 text-[16px] leading-[20px] text-[#3c3c3c]">
+                                An island known for its stunning turquoise waters and luxurious overwater bungalows.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+        </div>
+        <div
+            class="social-icons absolute left-0 top-[50%] -translate-y-[50%] w-[60px] flex flex-col text-white text-2xl items-center justify-center ml-2">
+            <a href="#" class="w-[60px] h-[60px] flex items-center justify-center">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-[60px] h-[60px] flex items-center justify-center">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="w-[60px] h-[60px] flex items-center justify-center">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="w-[60px] h-[60px] flex items-center justify-center">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </main>
+    <script src="./travel_recommendation.js"></script>
+    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+</body>
+
+</html>
