@@ -92,3 +92,8 @@ searchInput.addEventListener('input', (event) => {
         showResultPage();
     }
 })
+
+function resetSearchFn(){
+    searchInput.value = '';
+}
+resetSearchButton.addEventListener('click', resetSearchFn)
